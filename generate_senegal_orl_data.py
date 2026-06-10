@@ -4,8 +4,8 @@ from datetime import datetime
 
 DB_USER = "SYSTEM"
 DB_PASSWORD = "oracle"
-DB_HOST = "localhost"
-DB_PORT = 1522
+DB_HOST = "oracle-db-senegal"
+DB_PORT = 1521
 DB_SERVICE = "XE"
 
 # Données Sénégal

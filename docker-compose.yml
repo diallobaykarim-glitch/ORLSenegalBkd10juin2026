@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   # Oracle Database
   oracle-db:
@@ -8,7 +6,7 @@ services:
     environment:
       ORACLE_PASSWORD: oracle
     ports:
-      - "1522:1521"
+      - "1523:1521"
     volumes:
       - oracle_data:/opt/oracle/oradata
     healthcheck:
@@ -32,7 +30,7 @@ services:
       DB_PORT: 1521
       DB_SERVICE: XE
     ports:
-      - "8000:8000"
+      - "8001:8000"
     depends_on:
       oracle-db:
         condition: service_healthy
@@ -59,7 +57,7 @@ services:
       DB_PORT: 1521
       DB_SERVICE: XE
     ports:
-      - "8501:8501"
+      - "8502:8501"
     depends_on:
       - oracle-db
       - api
