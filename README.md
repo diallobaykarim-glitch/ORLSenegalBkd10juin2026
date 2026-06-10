@@ -37,9 +37,9 @@ docker-compose up -d --build
 
 ### Accès
 
-- **Dashboard** : http://localhost:8501
-- **API Docs** : http://localhost:8000/docs
-- **Oracle** : localhost:1522 (sys/oracle)
+- **Dashboard** : http://localhost:8502
+- **API Docs** : http://localhost:8001/docs
+- **Oracle** : localhost:1523 (sys/oracle)
 
 ## 📈 Données
 
